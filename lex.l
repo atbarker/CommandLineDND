@@ -25,4 +25,4 @@ SPECIAL [()><|&;*]
 
 %%
 
-char **getline() { return (char **) yylex((); }
+char **lexgetline() { return (char **) yylex((); }

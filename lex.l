@@ -1,4 +1,6 @@
 %{
+#include "dice.h"
+
 int __numargs = 20;
 char *_args = 20;
 int _argcount = 0;
@@ -6,7 +8,7 @@ int _argcount = 0;
 
 WORD	[a-zA-Z0-9\/\.-]+
 SPECIAL [()><|&;*]
-
+ROLL    ([0-9]*)d[4|6|8|10|12|20]([x[0-9]*]?)([+[0-9]*]?)
 %%
 	_argcount = 0; _args[0] = NULL;
 

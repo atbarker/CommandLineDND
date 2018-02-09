@@ -3,20 +3,20 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <stdio.h>
+#include <time.h>
 
 #include "character.h"
 #include "dice.h"
 
 extern char **lexgetline();
 
-int main(){
-	int i;
+int main(int argc, char **argv){
+	//status variable
 	char **args;
-	while(1){
+	while(){
 		args = lexgetline();
-		for(i=0; args[i] != NULL; i++){
-
-		}
-	}
-	return 0;
+		//identify tokens
+		//parse command
+		//execute command		
+	}	
 }
